@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "whatsapp-cli"
+version = "0.1.0"
+description = ""
+authors = ["1TaylanOzturk <1taylanozturk@protonmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+PyAutoGUI = "^0.9.53"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
