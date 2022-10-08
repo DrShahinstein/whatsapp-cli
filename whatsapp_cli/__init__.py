@@ -3,7 +3,7 @@ from .commands.create_schedule import schedule as create_schedule
 from .commands.remove_schedule import schedule as remove_schedule
 from .commands.schedule import schedule
 from .commands.reset_schedules import schedules as reset_schedules
-from .prelude.schedule import initialize_config
+from .prelude import initialize_config
 
 
 @click.group()
