@@ -12,7 +12,7 @@ def schedule():
     hours = click.prompt(click.style("hh", fg="bright_red") + ":mm")
     minutes = click.prompt("hh:" + click.style("mm", fg="bright_red"))
 
-    if is_valid_time(hours, minutes) and int(minutes) <= 60:
+    if is_valid_time(hours, minutes) and int(minutes) <= 59:
         create_schedule(name=schedule_name,
                         message=message, receiver=receiver,
                         hours=hours, minutes=minutes)
