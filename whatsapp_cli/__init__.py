@@ -1,8 +1,8 @@
 import click
-from .commands.create_schedule import schedule as create_schedule
-from .commands.remove_schedule import schedule as remove_schedule
-from .commands.schedule import schedule
-from .commands.reset_schedules import schedules as reset_schedules
+from .commands.schedule.create_schedule import schedule as create_schedule
+from .commands.schedule.remove_schedule import schedule as remove_schedule
+from .commands.schedule.schedule import schedule
+from .commands.schedule.reset_schedules import schedules as reset_schedules
 from .prelude import initialize_config
 
 
