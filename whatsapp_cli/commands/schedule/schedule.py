@@ -28,11 +28,11 @@ def schedule():
     if not schedules:
         click.echo("No schedules.")
 
-    localtime = time.localtime()
     for schedule in schedules:
         schedule_name = schedule["name"]
 
         # Current time
+        localtime = time.localtime()
         current_hours = localtime.tm_hour
         current_minutes = localtime.tm_min
         current_seconds = localtime.tm_sec
