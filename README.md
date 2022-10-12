@@ -73,7 +73,7 @@ Enter the name of the schedule you want to remove: ^CAborted!
 
 ---
 
-Finally, we currenty have two messages, let's schedule them.
+Finally, we currently have two messages, let's schedule them.
 
 ```bash
 [whatsapp-cli]$ poetry run python3 -m whatsapp_cli schedule
@@ -83,9 +83,9 @@ Next message will be delivered in 0:00:44
 Next message will be delivered in 0:02:50
 ```
 
-The delivery of a message means that the CLI is going to open up whatsapp-web on your default browser and going to deliver your message after some seconds.
+The delivery of a message means that the CLI is going to open up whatsapp-web on your default browser and deliver your message after some seconds.
 
 ## Contribution
 
-Pull requests are always welcome. This project, for now, only works with just scheduling whatsapp-web messages but it's been developed in an improvable way so that it can have many more operations more than just scheduling messages with either open-source supports and also my effort.
+Pull requests are always welcome. This project, for now, only works with just scheduling whatsapp-web messages but it's been developed in an improvable way so that it can have many more operations than just scheduling messages with either open-source support and also my effort.
 Apart from that, if you like this project, please don't forget to leave a star.
