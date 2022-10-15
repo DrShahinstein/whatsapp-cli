@@ -1,10 +1,9 @@
 import click
 import json
-
-EMPTY_ARRAY_CONFIG = []
+from ...prelude.config import SCHEDULES_PATH, EMPTY_ARRAY
 
 
 @click.command()
 def schedules():
-    with open("./whatsapp_cli/.config/schedules.json", "w") as f:
-        json.dump(EMPTY_ARRAY_CONFIG, f)
+    with open(SCHEDULES_PATH, "w") as f:
+        json.dump(EMPTY_ARRAY, f)
