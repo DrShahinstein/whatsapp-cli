@@ -1,7 +1,8 @@
 import json
+from ..config import SCHEDULES_PATH
 
 
-def create_schedule(path="./whatsapp_cli/.config/schedules.json", **kwargs):
+def create_schedule(path=SCHEDULES_PATH, **kwargs):
     with open(path, "r") as f:
         current_json_content = json.load(f)
 
