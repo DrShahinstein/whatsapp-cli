@@ -1,9 +1,6 @@
 import os
 import json
-
-CONFIG_PATH = "./whatsapp_cli/.config"
-SCHEDULES_CONFIG_PATH = f"{CONFIG_PATH}/schedules.json"
-EMPTY_ARRAY_CONFIG = []
+from .config import CONFIG_PATH, SCHEDULES_PATH, EMPTY_ARRAY
 
 
 def init():
@@ -11,10 +8,10 @@ def init():
         os.mkdir(CONFIG_PATH)
 
     # schedules.json
-    if not os.path.isfile(SCHEDULES_CONFIG_PATH):
-        with open(SCHEDULES_CONFIG_PATH, "w") as f:
-            json.dump(EMPTY_ARRAY_CONFIG, f)
+    if not os.path.isfile(SCHEDULES_PATH):
+        with open(SCHEDULES_PATH, "w") as f:
+            json.dump(EMPTY_ARRAY, f)
     else:
-        with open(SCHEDULES_CONFIG_PATH, "r+") as f:
+        with open(SCHEDULES_PATH, "r+") as f:
             if not f.read():
-                json.dump(EMPTY_ARRAY_CONFIG, f)
+                json.dump(EMPTY_ARRAY, f)
