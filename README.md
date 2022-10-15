@@ -5,6 +5,7 @@ A command line interface for helpful whatsapp-web operations like scheduling mes
 ## Requirements
 
 - [python-poetry](https://python-poetry.org/)
+- [python-pip](https://pypi.org/project/pip/)
 
 ## Installation
 
