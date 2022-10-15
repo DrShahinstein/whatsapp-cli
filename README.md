@@ -77,13 +77,33 @@ Finally, we currently have two messages, let's schedule them.
 
 ```bash
 [whatsapp-cli]$ poetry run python3 -m whatsapp_cli schedule
-# The CLI firstly picks the earliest one among our schedules and starts a countdown.
+# The CLI first picks the earliest one among our schedules and starts a countdown.
 Next message will be delivered in 0:00:44
 # After the ending of the countdown, it goes on with the next one.
 Next message will be delivered in 0:02:50
 ```
 
 The delivery of a message means that the CLI is going to open up whatsapp-web on your default browser and deliver your message after some seconds.
+
+## Build
+
+To build whatsapp-cli, you need to run:
+
+```bash
+[whatsapp-cli]$ poetry build
+```
+
+Just then you run `poetry build`, a new directory `dist` is going to be created. Change your directory to this directory and build whatsapp-cli with the whl file inside `dist` by running:
+
+```bash
+[dist]$ pip3 install whatsapp_cli-0.1.0-py3-none-any.whl
+```
+
+Now that you have built whatsapp-cli, you can run it this way:
+
+```bash
+$ python3 -m whatsapp_cli [commands] [options]
+```
 
 ## Contribution
 
