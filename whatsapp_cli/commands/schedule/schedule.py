@@ -1,5 +1,6 @@
 from ...prelude.schedule.remove_schedule import remove_schedule
 from ...prelude.schedule.sort_schedules import sort_schedules
+from ...prelude.config import SCHEDULES_PATH
 import click
 import webbrowser
 import threading
@@ -22,7 +23,7 @@ def send_message(schedule):
 def schedule():
     """Schedule your messages"""
 
-    with open("./whatsapp_cli/.config/schedules.json", "r") as f:
+    with open(SCHEDULES_PATH, "r") as f:
         schedules = sort_schedules(json.load(f))
 
     if not schedules:
