@@ -1,7 +1,8 @@
 import json
+from ..config import SCHEDULES_PATH
 
 
-def remove_schedule(schedule_name, path="./whatsapp_cli/.config/schedules.json"):
+def remove_schedule(schedule_name, path=SCHEDULES_PATH):
     with open(path, "r") as f:
         schedules = json.load(f)
 
