@@ -4,8 +4,8 @@ from ...prelude.config import SCHEDULES_PATH
 
 
 def truncate(message: str):
-    if len(message) > 70:
-        return message[:70] + "..."
+    if len(message) > 40:
+        return message[:40] + "..."
     else:
         return message
 
