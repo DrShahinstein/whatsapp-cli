@@ -103,7 +103,7 @@ Just then you run `poetry build`, a new directory `dist` is going to be created.
 Now that you have built whatsapp-cli, you can run it this way:
 
 ```bash
-$ python3 -m whatsapp_cli [commands] [options]
+$ whatsapp_cli [commands] [options]
 ```
 
 ## Contribution
