@@ -108,5 +108,5 @@ $ whatsapp_cli [commands] [options]
 
 ## Contribution
 
-Pull requests are always welcome. This project, for now, only works with just scheduling whatsapp-web messages but it's been developed in an improvable way so that it can have many more operations than just scheduling messages with either open-source support and also my effort.
-Apart from that, if you like this project, please don't forget to leave a star.
+Pull requests are enthusiastically encouraged for this project. Currently, the focus lies on scheduling WhatsApp Web messages. However, it's developed with the potential for expansion into various other operations through open-source contributions. Or, I might be adding fresh new features in the future.
+Finally, if you like this project, please don't forget to leave a star which is motivating!
