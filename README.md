@@ -1,6 +1,6 @@
 # whatsapp-cli
 
-A command line interface for helpful whatsapp-web operations like scheduling messages and so on.
+Simple command line tool for whatsapp-web featuring message schedules. 
 
 ## Requirements
 
@@ -25,7 +25,7 @@ $ poetry install
 
 ### How to schedule messages?
 
-Let's create two new schedules like so...
+Let's create two new schedules like so:
 
 ```bash
 [whatsapp-cli]$ poetry run python3 -m whatsapp-cli create schedule
@@ -84,7 +84,7 @@ Next message will be delivered in 0:00:44
 Next message will be delivered in 0:02:50
 ```
 
-The delivery of a message means that the CLI is going to open up whatsapp-web on your default browser and deliver your message after some seconds.
+The delivery of a message means that the CLI is going to open up whatsapp-web on your default browser and deliver your message after 10 seconds.
 
 ## Build
 
@@ -105,7 +105,3 @@ Now that you have built whatsapp-cli, you can run it this way:
 ```bash
 $ whatsapp_cli [commands] [options]
 ```
-
-## Contribution
-
-Pull requests are enthusiastically encouraged for this project. Currently, the focus lies on scheduling WhatsApp Web messages which is performed pretty simple and primitive. However, it has a minor potential for expansion into various other operations through open-source contributions. Or, I might be adding fresh new features in the future.
